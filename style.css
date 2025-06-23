@@ -1,0 +1,111 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.footer-bg {
+    background-color: #2d2d2d;
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+.footer-link {
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+/* modal */
+.modal-overlay {
+    backdrop-filter: blur(4px);
+}
+
+.password-valid {
+    color: #10b981 !important;
+}
+
+.password-invalid {
+    color: #ef4444 !important;
+}
+
+.indicator-valid {
+    color: #10b981 !important;
+}
+
+.indicator-invalid {
+    color: #ef4444 !important;
+}
+
+
+input:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+input[type="checkbox"]:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    background-color: #3b82f6 !important;
+}
+
+.password-toggle:hover {
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .footer-bg {
+        padding: 2rem 1rem;
+    }
+    
+    .grid {
+        gap: 2rem;
+    }
+    
+    .social-icon {
+        font-size: 1.2rem;
+    }
+
+    #authModal .bg-white {
+        margin: 1rem;
+        max-height: calc(100vh - 2rem);
+    }
+}
+
+.footer-link:focus,
+.social-icon:focus,
+.subscribe-btn:focus,
+.back-to-top:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+
+#subscribeEmail:focus {
+    box-shadow: 0 0 0 2px #ffffff;
+    cursor: pointer;
+}
+
+#subscribeEmail {
+    cursor: pointer;
+}
+
+a, button, input {
+    transition: all 0.3s ease;
+}
